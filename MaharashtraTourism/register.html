@@ -1,0 +1,86 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width", initial-scale=1>  
+    <style>
+        body {
+            font-family : Ariel;
+               background-color : white;
+        }
+        *{ 
+         
+         box-sizing: border-box;    
+        }
+        
+        .container {
+        padding : 16px;    
+        background-color : white;        
+        }
+        
+        input[type=text]
+        {
+        width : 80%;
+        padding : 15px;
+        margin : 5px 0 22px 0;
+        display : inline-block;
+        background : white;    
+        }
+        
+          input[type=text]:focus
+        {
+        background-color : #ddd;
+        outline : none;    
+        }
+        h1 {
+            color : Black;
+        }
+        hr {
+        border : 1px solid #f1f1f1;
+        margin-bottom : 25px;
+            
+        }  
+        
+        .registerbtn {
+            
+             background-color:lightblue;
+             color : Red;
+             padding : 16px 20px;
+             margin : 8px 0;
+             border : none;
+             cursor : pointer;
+             width : 80%
+             opacity : 0.9;     
+             
+        }
+        .registerbtn :hover {
+        opacity : 1;    
+        }
+    </style> 
+        
+    </head>
+    <body>
+        
+        
+        <form action="C:\xampp\htdocs\submit.php" method='post'> <center><h1> Registration </h1></center><hr>
+            
+        <div class="container col-mid-8">
+            
+            
+        <label for="fname"> Full Name </label><br>
+        <input type="text" placeholder="Enter full Name" name="fname" id="fname" required>
+        <br><br>
+        <label for="address"> Address </label><br>    
+        <input type="text" Placeholder="Enter Addres" name="addrs" id="addrs" required>
+        <br><br>    
+        <label for="mobnum"> Mobile No</label><br>
+        <input type="text" Placeholder="Enter Mobile Number" name="mobnum" id="mobnum" required>
+        <br><br>    
+        <label for="email">Email</label><br>   
+        <input type="text" placeholder=" Enter Email" name="email" id="email" required>        
+        <br><br>
+        <center><input type="submit" value="submit" class="btn" name="btn-save" ></center>
+            
+            </div>   
+        </form>
+        
+       </body>
+       </html>
